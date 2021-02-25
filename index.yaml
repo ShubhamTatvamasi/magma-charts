@@ -1,5 +1,120 @@
 apiVersion: v1
 entries:
+  cwf-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:41.29846083Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's cwf module
+    digest: 35789e96a1a181544be1e6f680e7eb1f8eee3becc2a2a04c9a361223b06f4c54
+    keywords:
+    - magma
+    - or8cr
+    - cwf-orc8r
+    name: cwf-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/cwf-orc8r-0.2.1/cwf-orc8r-0.2.1.tgz
+    version: 0.2.1
+  fbinternal-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:41.421318965Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's fbinternal module
+    digest: 6dd2abe2ff719e998a6d972cf96931647852e308e71035e298414765fbf7eb2f
+    keywords:
+    - magma
+    - or8cr
+    - fbinternal-orc8r
+    name: fbinternal-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/fbinternal-orc8r-0.2.1/fbinternal-orc8r-0.2.1.tgz
+    version: 0.2.1
+  feg-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:41.565391845Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's feg module
+    digest: 8272607fb0a58db16f4f7884db320b0f3e8c182d0073c3589e12be59a083fce6
+    keywords:
+    - magma
+    - or8cr
+    - feg-orc8r
+    name: feg-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/feg-orc8r-0.2.3/feg-orc8r-0.2.3.tgz
+    version: 0.2.3
+  lte-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:41.69053905Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's lte module
+    digest: 2f6b7c33503ff28b155d6afda7bb2c844b6f4ca61c8fdd963adf44718d4ba3d8
+    keywords:
+    - magma
+    - or8cr
+    - lte-orc8r
+    name: lte-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/lte-orc8r-0.2.2/lte-orc8r-0.2.2.tgz
+    version: 0.2.2
+  orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:41.87671651Z"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.21
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.8
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator
+    digest: 3e2deef78840da3e1aec347291c52e286ce6ff27f5c5143ca97b1f9e48669c7b
+    keywords:
+    - magma
+    - or8cr
+    name: orc8r
+    sources:
+    - https://github.com/facebookincubator/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/orc8r-1.5.14/orc8r-1.5.14.tgz
+    version: 1.5.14
   orc8rlib:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -16,4 +131,24 @@ entries:
     urls:
     - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/orc8rlib-0.1.2/orc8rlib-0.1.2.tgz
     version: 0.1.2
-generated: "2021-02-25T17:29:11.62181761Z"
+  wifi-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-25T17:39:42.03394149Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/magma-charts
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's wifi module
+    digest: edf3427786ed3b3e46211db0c77902803dffc29a6080b9a8a2a113e6f9b20122
+    keywords:
+    - magma
+    - or8cr
+    - wifi-orc8r
+    name: wifi-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/magma-charts/releases/download/wifi-orc8r-0.2.1/wifi-orc8r-0.2.1.tgz
+    version: 0.2.1
+generated: "2021-02-25T17:39:42.03394959Z"
