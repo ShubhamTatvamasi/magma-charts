@@ -41,6 +41,11 @@ do
 done
 ```
 
+remove all packaged files:
+```bash
+find . -type f -name "*.tgz" -exec rm {} +
+```
+
 Work in progress:
 ```bash
 find . -type f -name Chart.yaml

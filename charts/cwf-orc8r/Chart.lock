@@ -1,0 +1,6 @@
+dependencies:
+- name: orc8rlib
+  repository: https://shubhamtatvamasi.github.io/magma-charts
+  version: 0.1.2
+digest: sha256:72f5ad0856ed332d03309aecaf9b886c60aea4b10eeb7e43652a02cdcdfbae36
+generated: "2021-02-25T23:06:02.748858157+05:30"
