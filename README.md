@@ -18,7 +18,7 @@ helm search repo magma
 
 setup magma repo:
 ```bash
-export MAGMA_ROOT=/tmp/magma-new/magma
+export MAGMA_ROOT=/tmp/magma
 ```
 
 copy latest helm charts on github repo:
