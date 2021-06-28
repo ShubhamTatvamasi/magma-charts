@@ -24,12 +24,14 @@ export MAGMA_ROOT=/tmp/magma
 copy latest helm charts on github repo:
 ```bash
 cp -r $MAGMA_ROOT/orc8r/cloud/helm/orc8r .
-cp -r $MAGMA_ROOT/orc8r/cloud/helm/orc8rlib .
+cp -r $MAGMA_ROOT/orc8r/cloud/helm/orc8r/charts/secrets .
 cp -r $MAGMA_ROOT/cwf/cloud/helm/cwf-orc8r .
 cp -r $MAGMA_ROOT/lte/cloud/helm/lte-orc8r .
 cp -r $MAGMA_ROOT/feg/cloud/helm/feg-orc8r .
 cp -r $MAGMA_ROOT/fbinternal/cloud/helm/fbinternal-orc8r .
 cp -r $MAGMA_ROOT/wifi/cloud/helm/wifi-orc8r .
+
+cp -r $MAGMA_ROOT/orc8r/cloud/helm/orc8rlib .
 ```
 
 update dependencies for all charts:
