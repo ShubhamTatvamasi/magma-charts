@@ -41,9 +41,10 @@ do
 done
 ```
 
-remove all packaged files:
+remove extra files:
 ```bash
 find . -type f -name "*.tgz" -exec rm {} +
+find . -type f -name "Chart.lock" -exec rm {} +
 ```
 
 Work in progress:
